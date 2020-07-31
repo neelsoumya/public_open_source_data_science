@@ -1,0 +1,293 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>call_generic_random_forests</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-07-12"><meta name="DC.source" content="call_generic_random_forests.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="keyword">function</span> call_generic_random_forests()
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">% Name - call_generic_random_forests</span>
+<span class="comment">% Creation Date - 7th July 2015</span>
+<span class="comment">% Author - Soumya Banerjee</span>
+<span class="comment">% Website - https://sites.google.com/site/neelsoumya/</span>
+<span class="comment">%</span>
+<span class="comment">% Description - Function to load data and call generic random forests function</span>
+<span class="comment">%</span>
+<span class="comment">% Parameters -</span>
+<span class="comment">%	Input</span>
+<span class="comment">%</span>
+<span class="comment">%	Output</span>
+<span class="comment">%               BaggedEnsemble - ensemble of random forests</span>
+<span class="comment">%               Plots of out of bag error</span>
+<span class="comment">%		Example prediction</span>
+<span class="comment">%</span>
+<span class="comment">% Example -</span>
+<span class="comment">%		call_generic_random_forests()</span>
+<span class="comment">%</span>
+<span class="comment">% Acknowledgements -</span>
+<span class="comment">%           Dedicated to my mother Kalyani Banerjee, my father Tarakeswar Banerjee</span>
+<span class="comment">%				, my wife Joyeeta Ghose and my friend Irene Egli.</span>
+<span class="comment">%</span>
+<span class="comment">% License - BSD</span>
+<span class="comment">%</span>
+<span class="comment">% Change History -</span>
+<span class="comment">%                   7th July 2015 - Creation by Soumya Banerjee</span>
+<span class="comment">%                   12th July 2017 - Modified by Soumya Banerjee to try different leaf node</span>
+<span class="comment">%                                   and estimate feature importance</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+
+<span class="comment">%load fisheriris</span>
+<span class="comment">%X = meas;</span>
+<span class="comment">%Y = species;</span>
+<span class="comment">%BaggedEnsemble = generic_random_forests(X,Y,60,'classification')</span>
+<span class="comment">%predict(BaggedEnsemble,[5 3 5 1.8])</span>
+
+<span class="comment">% load breast cancer data</span>
+unix(<span class="string">'wget http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data'</span>)
+data_matrix = importdata(<span class="string">'breast-cancer-wisconsin.data'</span>);
+icol = size(data_matrix,2)
+data_predictor = data_matrix(:,1:icol-1); <span class="comment">% predictors matrix</span>
+label = data_matrix(:,end); <span class="comment">% last column is 2 for benign, 4 for malignant</span>
+
+BaggedEnsemble = generic_random_forests(data_predictor, label, 500, <span class="string">'classification'</span>)
+predict(BaggedEnsemble, [1000025,5,1,1,1,2,1,3,1,1])
+
+<span class="comment">% Model says that x6 (single epithelial cell size) is most important</span>
+<span class="comment">% predictor</span>
+</pre><pre class="codeoutput">wget: /opt/matlab/bin/glnxa64/libcrypto.so.1.0.0: no version information available (required by wget)
+wget: /opt/matlab/bin/glnxa64/libssl.so.1.0.0: no version information available (required by wget)
+wget: /opt/matlab/bin/glnxa64/libssl.so.1.0.0: no version information available (required by wget)
+--2017-07-12 20:23:46--  http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data
+Resolving archive.ics.uci.edu (archive.ics.uci.edu)... 128.195.10.249
+Connecting to archive.ics.uci.edu (archive.ics.uci.edu)|128.195.10.249|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19889 (19K) [text/plain]
+Saving to: &#8216;breast-cancer-wisconsin.data.10&#8217;
+
+          breast-ca   0%[                    ]       0  --.-KB/s               breast-cancer-wisco 100%[===================&gt;]  19.42K  --.-KB/s    in 0.1s    
+
+2017-07-12 20:23:47 (137 KB/s) - &#8216;breast-cancer-wisconsin.data.10&#8217; saved [19889/19889]
+
+
+ans =
+
+     0
+
+
+icol =
+
+    11
+
+
+min_leaf_size =
+
+     5
+
+
+BaggedEnsemble = 
+
+  TreeBagger
+Ensemble with 500 bagged decision trees:
+                    Training X:              [24x10]
+                    Training Y:               [24x1]
+                        Method:       classification
+                 NumPredictors:                   10
+         NumPredictorsToSample:                    4
+                   MinLeafSize:                    1
+                 InBagFraction:                    1
+         SampleWithReplacement:                    1
+          ComputeOOBPrediction:                    1
+ ComputeOOBPredictorImportance:                    0
+                     Proximity:                   []
+                    ClassNames:             '2'             '4'           'NaN'
+
+
+ans =
+
+  24&times;1 cell array
+
+    '2'
+    '2'
+    '2'
+    '2'
+    '2'
+    '4'
+    '2'
+    '2'
+    '2'
+    '2'
+    '2'
+    '2'
+    '4'
+    '2'
+    '4'
+    '4'
+    '2'
+    '2'
+    '4'
+    '2'
+    '4'
+    '4'
+    '2'
+    '2'
+
+
+Decision tree for classification
+1  if x4&lt;4.5 then node 2 elseif x4&gt;=4.5 then node 3 else 2
+2  class = 2
+3  if x8&lt;4 then node 4 elseif x8&gt;=4 then node 5 else 4
+4  class = 2
+5  class = 4
+
+
+idxvar =
+
+  1&times;0 empty double row vector
+
+
+BaggedEnsemble = 
+
+  TreeBagger
+Ensemble with 500 bagged decision trees:
+                    Training X:              [24x10]
+                    Training Y:               [24x1]
+                        Method:       classification
+                 NumPredictors:                   10
+         NumPredictorsToSample:                    4
+                   MinLeafSize:                    1
+                 InBagFraction:                    1
+         SampleWithReplacement:                    1
+          ComputeOOBPrediction:                    1
+ ComputeOOBPredictorImportance:                    0
+                     Proximity:                   []
+                    ClassNames:             '2'             '4'           'NaN'
+
+
+ans =
+
+  cell
+
+    '2'
+
+</pre><img vspace="5" hspace="5" src="call_generic_random_forests_01.png" alt=""> <img vspace="5" hspace="5" src="call_generic_random_forests_02.png" alt=""> <img vspace="5" hspace="5" src="call_generic_random_forests_03.png" alt=""> <img vspace="5" hspace="5" src="call_generic_random_forests_04.png" alt=""> <img vspace="5" hspace="5" src="call_generic_random_forests_05.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+function call_generic_random_forests()
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name - call_generic_random_forests
+% Creation Date - 7th July 2015
+% Author - Soumya Banerjee
+% Website - https://sites.google.com/site/neelsoumya/
+%
+% Description - Function to load data and call generic random forests function
+%
+% Parameters - 
+%	Input	
+%
+%	Output
+%               BaggedEnsemble - ensemble of random forests
+%               Plots of out of bag error
+%		Example prediction	
+%
+% Example -
+%		call_generic_random_forests()
+%
+% Acknowledgements -
+%           Dedicated to my mother Kalyani Banerjee, my father Tarakeswar Banerjee
+%				, my wife Joyeeta Ghose and my friend Irene Egli.
+%
+% License - BSD
+%
+% Change History - 
+%                   7th July 2015 - Creation by Soumya Banerjee
+%                   12th July 2017 - Modified by Soumya Banerjee to try different leaf node
+%                                   and estimate feature importance
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%load fisheriris
+%X = meas;
+%Y = species;
+%BaggedEnsemble = generic_random_forests(X,Y,60,'classification')
+%predict(BaggedEnsemble,[5 3 5 1.8])
+
+% load breast cancer data 
+unix('wget http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data')
+data_matrix = importdata('breast-cancer-wisconsin.data');
+icol = size(data_matrix,2)
+data_predictor = data_matrix(:,1:icol-1); % predictors matrix
+label = data_matrix(:,end); % last column is 2 for benign, 4 for malignant
+
+BaggedEnsemble = generic_random_forests(data_predictor, label, 500, 'classification')
+predict(BaggedEnsemble, [1000025,5,1,1,1,2,1,3,1,1])
+
+% Model says that x6 (single epithelial cell size) is most important
+% predictor
+##### SOURCE END #####
+--></body></html>

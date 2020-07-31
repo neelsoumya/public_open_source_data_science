@@ -1,0 +1,20 @@
+code structure in keras
+
+backpropagation basics
+
+dropout regularization as ensemble (Ian Goodfellow book diagram)
+
+batth normalization
+
+convoltion
+     https://www.youtube.com/watch?v=XuD4C8vJzEQ
+
+
+keras structure
+
+Google colab notebook for horse and human detection
+
+Examples of AI in browser
+  Make sketches along with computer
+
+

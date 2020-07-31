@@ -1,0 +1,7 @@
+Analysis of sex crimes on US university campuses
+
+regressionplot_11-Dec-2014.pdf - The x axis is university enrollment (logged) and the y axis is sex crimes/assault reported by the university. There maybe huge reporting bias though. Even though there is a statistically significant relationship (run test_correlation.m, r^2 = 0.1823, ordinary least squares slope = 9.5576, p value = 2.6740e-49), it may be explained more by distinct clusters of universities. 
+
+cluster_plot_07-Dec-2014.pdf - There are though two distinct clusters, schools with low sex crimes regardless of enrollment and those with high
+enrollment and high sex crimes (apparent on crime vs log10 enrollment
+plot). Run kmeans_clustering.m

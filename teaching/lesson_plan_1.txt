@@ -1,0 +1,24 @@
+1. tutorial slides
+http://neuralnetworksanddeeplearning.com/
+
+
+2. playground tensorflow
+https://playground.tensorflow.org/
+
+
+3. loss function game
+https://developers.google.com/machine-learning/crash-course/fitter/graph
+
+https://developers.google.com/machine-learning/crash-course/reducing-loss/playground-exercise
+
+
+4. linear regression video
+https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
+
+
+5. code in google colab
+https://github.com/neelsoumya/butterfly_detector/blob/master/Butterfly_detector_Course_2_Part_2_Lesson_3_Notebook.ipynb
+
+
+6. more theory and code from paper
+https://www.sciencedirect.com/science/article/pii/S0370157319300766#sec9

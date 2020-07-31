@@ -1,0 +1,28 @@
+1) Rules of applying machine learning
+
+https://www.youtube.com/watch?v=VfcY0edoSLU
+
+https://developers.google.com/machine-learning/guides/rules-of-ml/
+
+Paper on basics of machine learning
+
+https://dl.acm.org/citation.cfm?id=2347755
+
+
+2) Structuring machine learning projects
+    
+https://www.coursera.org/learn/machine-learning-projects
+    
+
+3) Hackathon!
+
+BYOD bring your own data
+
+Kaggle competition
+
+DREAM competition
+
+UCI machine learning datasets
+
+https://www.cpc.unc.edu/projects/china/data
+

@@ -1,0 +1,4 @@
+communities.data (text/plain; charset=US-ASCII) 1102815 bytes.
+communities.names (text/plain; charset=US-ASCII) 27179 bytes.
+Table_79_Full-time_Law_Enforcement_Employees_by_State_by_University_and_College_2011.xls (application/vnd.ms-excel) 112640 bytes.
+Table_9_Offenses_Known_to_Law_Enforcement_by_State_University_and_College_2011.xls (application/vnd.ms-excel) 141312 bytes.

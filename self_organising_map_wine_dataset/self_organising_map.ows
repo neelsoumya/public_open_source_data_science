@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Self-Organizing Map" position="(204.0, 191.0)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owsom.OWSOM" title="Self-Organizing Map" version="" />
+		<node id="1" name="Datasets" position="(95.0, 141.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owdatasets.OWDataSets" title="Datasets (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="0" source_channel="Data" source_node_id="1" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWA4AAABhdXRvX2RpbWVuc2lvbnEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWAkA
+AABoZXhhZ29uYWxxA4hYDgAAAGluaXRpYWxpemF0aW9ucQRLAVgKAAAAcGllX2NoYXJ0c3EFiFgT
+AAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEGQ0IB2dDLAAMAAAAAAaoAAADgAAAEMgAAAt8AAAGqAAAA
+4AAABDIAAALfAAAAAAAAAAAF3AAAAaoAAADgAAAEMgAAAt9xB1gJAAAAc2VsZWN0aW9ucQhOWBEA
+AABzaXplX2J5X2luc3RhbmNlc3EJiFgGAAAAc2l6ZV94cQpLD1gGAAAAc2l6ZV95cQtLD1gLAAAA
+X192ZXJzaW9uX19xDEsBWBAAAABjb250ZXh0X3NldHRpbmdzcQ1dcQ5jb3Jhbmdld2lkZ2V0LnNl
+dHRpbmdzCkNvbnRleHQKcQ8pgXEQfXERKFgEAAAAdGltZXESR0HXotIJZg5zWAYAAAB2YWx1ZXNx
+E31xFChYCgAAAGF0dHJfY29sb3JxFVgHAAAAcXVhbGl0eXEWS2aGcRdoDEsBdVgKAAAAYXR0cmli
+dXRlc3EYfXEZKFgNAAAAZml4ZWQgYWNpZGl0eXEaSwJYEAAAAHZvbGF0aWxlIGFjaWRpdHlxG0sC
+WAsAAABjaXRyaWMgYWNpZHEcSwJYDgAAAHJlc2lkdWFsIHN1Z2FycR1LAlgJAAAAY2hsb3JpZGVz
+cR5LAlgTAAAAZnJlZSBzdWxmdXIgZGlveGlkZXEfSwJYFAAAAHRvdGFsIHN1bGZ1ciBkaW94aWRl
+cSBLAlgHAAAAZGVuc2l0eXEhSwJYAgAAAHBIcSJLAlgJAAAAc3VscGhhdGVzcSNLAlgHAAAAYWxj
+b2hvbHEkSwJoFksCdVgFAAAAbWV0YXNxJX1xJnViYXUu
+</properties>
+		<properties format="literal" node_id="1">{'controlAreaVisible': True, 'header_state': b'\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xc9\x00\x00\x00\x07\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00 \x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x06\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x13\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00d', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\xfa\x00\x00\x00\xe6\x00\x00\x04\xe1\x00\x00\x02\xd9\x00\x00\x00\xfa\x00\x00\x00\xe6\x00\x00\x04\xe1\x00\x00\x02\xd9\x00\x00\x00\x00\x00\x00\x00\x00\x05\xdc\x00\x00\x00\xfa\x00\x00\x00\xe6\x00\x00\x04\xe1\x00\x00\x02\xd9', 'selected_id': 'core\\winequality-red.tab', 'splitter_state': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01,\x00\x00\x00\xc8\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

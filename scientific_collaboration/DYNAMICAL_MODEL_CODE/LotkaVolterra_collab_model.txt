@@ -1,0 +1,29 @@
+STARTTIME = 0
+STOPTIME=10000
+DT = 0.02
+
+
+d/dt(x) = alpha*x + beta*x*y
+
+d/dt(y) = gamma*y
+
+; delta*x*y + gamma*y
+
+
+Init x = 1e3
+
+Init y = 1
+
+alpha = 1e-2
+
+beta = 1e-5
+
+delta = 1e-4
+
+gamma = 1e-2
+
+;Slog_perml = log10(S)
+
+
+
+
