@@ -140,4 +140,3 @@ Open source code and data for open source data science.
      
      * https://sites.google.com/site/neelsoumya/
      
-     * neel.soumya@gmail.com
