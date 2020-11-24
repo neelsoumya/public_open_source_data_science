@@ -107,7 +107,7 @@ Open source code and data for open source data science.
     
 25) teaching_resources
 
-    Teaching resources for machine learning and AI
+    Teaching resources for machine learning, data science and AI for a general audience
 
 
 
@@ -140,3 +140,4 @@ Open source code and data for open source data science.
      
      * https://sites.google.com/site/neelsoumya/
      
+     * neel.soumya@gmail.com
