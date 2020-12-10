@@ -16,6 +16,8 @@ Usage:
 Installation:
 
 	pip install -r requirements.txt
+        chmod 755 installer_unix.sh
+        ./installer_unix.sh
 
 Adapted from:
    https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/
