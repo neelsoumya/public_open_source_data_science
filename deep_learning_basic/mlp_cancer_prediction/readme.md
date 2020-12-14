@@ -1,6 +1,6 @@
 MLP for prediction
 
-Usgae:
+Usage:
 
 python3 deep_learning_keras_uci.py
 
