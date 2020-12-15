@@ -414,7 +414,7 @@ keras.utils.plot_model(model, to_file='keras_model.png', show_shapes=True,
 print("\n ********** Model Save Section ********** \n")
 print("       Saving model ......  \n")
 str_model_save_filename = "model_file_uci_dataset.h5"
-# model.save(str_model_save_filename)
+model.save(str_model_save_filename)
 # model_saved = load_model(str_model_save_filename)
 
 ##################################################################
