@@ -2,7 +2,7 @@
 
 Open source code and data for open source data science.
 
-* List of projects
+List of projects
 
 
 1) university_sexcrimes
