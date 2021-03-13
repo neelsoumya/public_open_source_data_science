@@ -5,5 +5,5 @@ multiple machine learning computations on data (inluding random forests, neural 
 GLM, logistic regression and PCA, with option to include SVM and k-means)
 
 Usage:
-	nohup matlab < combined_machine_learning_pipeline_ibd.m
+	nohup matlab < combined_machine_learning_pipeline.m
 
