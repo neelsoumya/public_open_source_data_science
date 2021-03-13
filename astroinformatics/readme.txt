@@ -1,12 +1,17 @@
 readme
 
-Analysis of astronomy data using machine learning techniques
+Analysis of astronomy data using machine learning techniques and astroinformatics.
 
 Usage: matlab < astroinformatics_kmeans_pca.m
 
 1) quasar-candidates.csv
-	Astroinformatics data from https://people.astro.ruhr-uni-bochum.de/polsterer/ai2rub.html
-and https://people.astro.ruhr-uni-bochum.de/polsterer/quasar-candidates.csv
+	Astroinformatics data from 
+	
+	https://people.astro.ruhr-uni-bochum.de/polsterer/ai2rub.html
+	
+	and 
+
+	https://people.astro.ruhr-uni-bochum.de/polsterer/quasar-candidates.csv
 
 2) astroinformatics_kmeans_pca.m
 	MATLAB code to load data and perform k-means and PCA analysis
