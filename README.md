@@ -1,6 +1,6 @@
 # README #
 
-Open source code and data for open source data science.
+Source code and data for open source data science.
 
 List of projects
 
