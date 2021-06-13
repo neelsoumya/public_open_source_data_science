@@ -115,6 +115,7 @@ List of projects
 ### What is this repository for? ###
 
 * Quick summary
+
 	* Open source code and data for open source data science.
 	
 * If you use this code, please cite the paper and code
@@ -125,7 +126,7 @@ List of projects
      
      * Banerjee, Soumya. (2017, September 3). Citizen Data Science for Social Good: Case Studies and Vignettes from Recent Projects (Supplementary Resources). Zenodo. http://doi.org/10.5281/zenodo.883783
 
-      [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.883783.svg)](https://doi.org/10.5281/zenodo.883783)
+      ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.883783.svg)](https://doi.org/10.5281/zenodo.883783)
 
 * These projects are an example of my approach to data science for good. I work very closely with domain experts and stakeholders and use computational tools for good. I outline my design and work philosophy below.
 
