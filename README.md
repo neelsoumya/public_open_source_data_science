@@ -1,6 +1,6 @@
 # README #
 
-Source code and data for open source data science.
+Source code and data for open source data science for social good.
 
 List of projects
 
