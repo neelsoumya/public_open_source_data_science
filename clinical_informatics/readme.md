@@ -1,6 +1,12 @@
 Open source tools for clinical informatics
 
-Most of these are based on a platform called TranSMART
+Tools to pseudonymize data
+
+ https://www.openpseudonymiser.org/Default.aspx
+
+
+
+Some other tools are based on a platform called TranSMART
 
 1) Useful Links
 A demo is available here:
@@ -80,3 +86,5 @@ https://drive.google.com/ le/d/0B8lizkKDeaKhbDEzcWxBdk5KYTQ/view?usp=sharing
 
 10) DataSHIELD
 
+        
+       https://github.com/datashield
