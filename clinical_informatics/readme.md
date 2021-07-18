@@ -9,6 +9,7 @@ Tools to pseudonymize data
 Some other tools are based on a platform called TranSMART
 
 1) Useful Links
+
 A demo is available here:
 
 http://etriks1.uni.lu/transmart/datasetExplorer
@@ -78,6 +79,7 @@ https://drive.google.com/ le/d/0B8lizkKDeaKhbDEzcWxBdk5KYTQ/view?usp=sharing
 
 
 9) Resources
+
 	http://athena.ohdsi.org/
 
 	https://icd.who.int/browse10/2016/en
