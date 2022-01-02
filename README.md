@@ -118,7 +118,9 @@ List of projects
 * Quick summary
 
 	* Open source code and data for open source data science.
-	
+
+### Citation ###
+
 * If you use this code, please cite the paper and code
      
      * Citizen Data Science for Social Good: Case Studies and Vignettes from Recent Projects https://doi.org/10.13140/RG.2.1.1846.6002
@@ -133,11 +135,15 @@ List of projects
 
      * ![data science philosophy](research_philosophy.png)
 
-* Installation
+### Installation ###
 
-     * pip3 install -r requirements.txt   
+Install R, R Studio, MATLAB and Python
 
-* Contact
+Install dependencies as follows:
+
+    pip3 install -r requirements.txt   
+
+### Contact ###
 
      * Soumya Banerjee
      
