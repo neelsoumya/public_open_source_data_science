@@ -145,8 +145,8 @@ Install dependencies as follows:
 
 ### Contact ###
 
-     * Soumya Banerjee
+     Soumya Banerjee
      
-     * https://sites.google.com/site/neelsoumya/
+     https://sites.google.com/site/neelsoumya/
      
-     * sb2333@cam.ac.uk
+     sb2333@cam.ac.uk
