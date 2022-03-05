@@ -1,0 +1,11 @@
+Package: public_open_source_data_science
+Type: Package
+Title: public_open_source_data_science: Open source projects for data science for social good
+Version: 1.0
+Imports: bookdown,
+          rmarkdown,
+          knitr,
+          tinytex,
+          ggplot2,
+          sqldf,
+          shiny
