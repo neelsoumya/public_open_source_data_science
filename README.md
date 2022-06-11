@@ -139,9 +139,23 @@ Source code and data for open source data science for social good. This is a dat
 
 Install R, R Studio, MATLAB and Python
 
-Install dependencies as follows:
+Install R 
 
+   https://www.r-project.org/
+
+and R Studio 
+
+   https://www.rstudio.com/products/rstudio/download/preview/
+
+```r
+source("https://raw.githubusercontent.com/neelsoumya/rlib/master/INSTALL_MANY_MODULES.R")
+```
+
+Install Python dependencies as follows:
+
+```r
     pip3 install -r requirements.txt   
+```
 
 ### Contact ###
 
