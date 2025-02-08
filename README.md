@@ -103,11 +103,16 @@ Source code and data for open source data science for social good. This is a dat
 
     A self organising map (SOM) on the UCI wine dataset using the Orange data science tool. 
     
-24) outreach
+
+24) LLMs
+
+Hackathons and resources for large-language models (LLMs).
+
+25) outreach
 
     Outreach for machine learning and AI for general public
     
-25) teaching_resources
+26) teaching_resources
 
     Teaching resources for machine learning, data science and AI for a general audience
 
